@@ -1,0 +1,164 @@
+html, body {
+     margin: 0;
+     padding: 0;
+}
+
+body {
+     background: #161616;
+}
+
+.wrapper {
+     position: absolute;
+     height: 100vh;
+     width: 100%;
+     color: rgba(255, 255, 255, 0.2);
+     font-family: Poppins;
+}
+
+.img-content {
+     position: absolute;
+     top: 40%;
+     left: 45%;
+     transform: translate(-50%, -50%);
+}
+
+.img-content img {
+     width: 700px;
+     height: 400px;
+     object-fit: cover;
+}
+
+.text-box {
+     position: absolute;
+     top: 70%;
+     left: 31.9%;
+     transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+     font-size: 40px;
+     letter-spacing: 1px;
+}
+
+.data-box {
+     position: absolute;
+     width: 40%;
+     top: 80%;
+     left: 46.5%;
+     transform: translate(-50%, -50%);
+}
+
+.data-box p {
+     font-size: 18px;
+     font-weight: 300;
+     letter-spacing: 1px;
+}
+
+.wrapper hr {
+     position: absolute;
+     width: 30%;
+     height: 1px;
+     top: 86%;
+     left: 41.5%;
+     transform: translate(-50%, -50%);
+     background: rgba(255, 255, 255, 0.2);
+     outline: none;
+     border: none;
+}
+
+.link-box {
+     position: absolute;
+     width: 30%;
+     height: 1px;
+     top: 90%;
+     left: 41.5%;
+     transform: translate(-50%, -50%);
+}
+
+.link-box a {
+     color: rgba(255, 255, 255, 0.4);
+     font-size: 18px;
+     text-decoration: none;
+     font-weight: 600;
+     letter-spacing: 1px;
+     transition: all 0.3s;
+}
+
+.link-box a:hover {
+     color: rgba(255, 255, 255, 0.2);
+}
+
+footer {
+     position: absolute;
+     top: 120vh;
+     height: 110px;
+     width: 100%;
+     background: #101010;
+     text-align: center;
+     font-size: 18px;
+     letter-spacing: 1px;
+     font-weight: 300;
+}
+
+footer p {
+     line-height: 75px;
+}
+
+.toggle-btn {
+     position: fixed;
+     margin: 1.4em;
+     padding: 1em;
+     width: 40px;
+     height: 12px;
+     right: 0;
+     z-index: 5;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: #fff;
+     margin-top: 12px;
+}
+
+.menu {
+     z-index: 4;
+     position: fixed;
+     background: #101010;
+     height: 100vh;
+     width: 100%;
+     top: -100%;
+}
+
+.data {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+}
+
+.data ul {
+     list-style: none;
+}
+
+.data li {
+     font-size: 25px;
+}
+
+.data a {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.2);
+     font-family: Poppins;
+     text-transform: uppercase;
+     line-height: 100px;
+     letter-spacing: 10px;
+}

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>CODEFLEX</title>
+     <link rel="stylesheet" href="master.css">
+     <link rel="stylesheet" href="elements.css">
+     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+</head>
+<body>
+     <div class="content">
+          <div class="first_block project">
+               <a href="page_not_found_design.html" class="block">
+                    <img src="project-1.jpg">
+               </a>
+               <h1>404 Page Design</h1>
+               <p>
+               With this lesson, you can
+               create an incredible 404 page,
+               using only HTML & CSS. It's
+               very easy, but at the same
+               time productive! It does not
+               matter if you are a
+               beginner this, but you will
+               all get out!</p>
+          </div>
+          <div class="second_block project">
+               <a href="parallax_pure_css.html" class="block">
+                     <img src="project-2.jpg">
+               </a>
+               <h1>Parallax Effect</h1>
+               <p>In this lesson, you learn
+               how to make parallax effect using CSS.
+               You will be interested to
+               learn how to make such an
+               effect even if you are a
+               beginner. I promise you that
+               it will be really
+               fun and useful</p>
+          </div>
+          <div class="third_block project">
+               <a href="mousemove_parallax.html" class="block">
+                     <img src="project-3.jpg">
+               </a>
+               <h1>Mousemove Animation</h1>
+               <p>
+               In this lesson, you learn
+               how to make parallax effect
+               when moving your cursor using
+               CSS & jQuery. You will be
+               interested to learn how to make such an
+               effect even if you are a beginner.
+               I promise you that it will
+               be really fun and useful</p>
+          </div>
+          <div class="fourth_block project">
+               <a href="after-scroll_effect.html" class="block">
+                     <img src="project-4.jpg">
+               </a>
+               <h1>After Scroll Effect</h1>
+               <p>
+               In this video you will see
+               and even make a cool effect
+               when you scroll pages. The
+               menu that we make CSS will
+               be animated using jQuery.
+               You will enjoy it! You can
+               use this animation on their
+               sites for free!</p>
+          </div>
+          <footer>
+               <p>Codeflex | All Rights Reserved</p>
+          </footer>
+     </div>
+     <div class="toggle-btn">
+          <span class="one"></span>
+          <span class="two"></span>
+     </div>
+     <div class="menu">
+          <div class="data">
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">Our Story</a></li>
+                   <li><a href="blog.html">Blog</a></li>
+               </ul>
+          </div>
+     </div>
+
+     <script type="text/javascript">
+
+     var t1 = new TimelineMax({paused: true});
+
+     t1.to(".one", 0.8, {
+           y: 6,
+           rotation: 45,
+           ease: Expo.easeInOut
+     });
+     t1.to(".two", 0.8, {
+           y: -6,
+           rotation: -45,
+           ease: Expo.easeInOut,
+           delay: -0.8
+     });
+
+     t1.to(".menu", 2, {
+           top: "0%",
+           ease: Expo.easeInOut,
+           delay: -2
+     });
+
+     t1.staggerFrom(".menu ul li", 2, {x: -200, opacity: 0, ease:Expo.easeOut}, 0.3);
+
+     t1.reverse();
+     $(document).on("click", ".toggle-btn", function() {
+           t1.reversed(!t1.reversed());
+     });
+
+    </script>
+
+</body>
+</html>
